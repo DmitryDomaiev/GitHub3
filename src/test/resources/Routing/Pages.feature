@@ -7,11 +7,11 @@ Given I am in page "Default"
 And I am signed in
 Given I am in page "Dashboard"
 
-@REL-745 @ignore @SC_495187520
+@ignore @REL-745 @SC_495187520
 Scenario: Check Sign In/Out link on Profile page
 Then I can see path matches RegEx "[default]dashboard" in browser route
 
-@REL-744 @ignore @SC_538459689
+@ignore @REL-744 @SC_538459689
 Scenario: Check settings link on Profile page
 Then I can see path matches RegEx "[default]dashboard" in browser route
 

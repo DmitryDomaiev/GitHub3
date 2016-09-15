@@ -81,7 +81,7 @@ Then I see pop up "Add account" was closed
 When I navigate to page 'Profile'
 And I see account is not in the table 'Credentials'
 
-@REL-798 @ignore @SC_518337615
+@ignore @REL-798 @SC_518337615
 Scenario: Check pagination panel for accounts
 Given I am in page "Default"
 And I am signed in

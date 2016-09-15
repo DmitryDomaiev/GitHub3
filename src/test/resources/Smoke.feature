@@ -360,7 +360,7 @@ And I lose focus
 Then I see success notification ""
 And I see that tag "tag2" is added to feature info under the tree
 
-@REL-873 @tag @SC_529021399
+@tag @REL-873 @SC_529021399
 Scenario: Edit scenario + Save by Save option
     #And I select feature "fileName_1" in the tree
 And I check that project "sDefault" is absent in DB
@@ -410,7 +410,7 @@ And I click option "Save" under drop-down 'Actions' in scenario accordion
 Then I see that the scenario is collapsed
 And I see that changes are successfully saved and changed data matches data in Scenario Editor for the edited scenario
 
-@REL-874 @tag @SC_473346080
+@tag @REL-874 @SC_473346080
 Scenario: Edit scenario + Save by Save Scenarios pop-up
     #And I select feature "fileName_1" in the tree
 And I check that project "sDefault" is absent in DB

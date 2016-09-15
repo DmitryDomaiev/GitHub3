@@ -298,7 +298,7 @@ And I click on button "Create" on pop-up "New Scenario"
 And I see scenario is expanded
 And I see that created scenario contains no empty lines
 
-@REL-809 @ignore @SC_500517181
+@ignore @REL-809 @SC_500517181
 Scenario: Example table
 When I type "Given I have an <example> parameter" in the first string in Scenario Editor in pop-up 'New Scenario'
 And I see that example table header "example" is present
