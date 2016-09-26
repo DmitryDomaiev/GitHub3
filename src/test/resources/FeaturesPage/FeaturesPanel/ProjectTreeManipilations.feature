@@ -101,7 +101,7 @@ And I can see that element "search_book" is in position "3" in the tree
 
 Examples: 
 |invalid|
-|~|
+|~ |
 |`|
 |!|
 |@|
@@ -128,7 +128,6 @@ Examples:
 |'|
 |:|
 |;|
-
 
 @REL-484 @SC_372896016
 Scenario Outline: Rename and Move folder pop-up + invalid symbols
