@@ -100,3 +100,35 @@ Examples:
 |500|500|
 |1000|1000|
 
+@SC_847352198
+Scenario Outline: Smoke. Select and confirm Tariff Plan
+Given am loged in as user <some user>
+And  I am on page 'Profile'
+When I click not defoult Tariff Plan
+And I click button 'Update'
+Then I go to 'Relime Admine' tab 'Invotes'
+And I see that record on 'New invoices to handle' area is created for <some user>
+When I go to Relime as user <some user>
+Then I see that Tariff Plan updeted to selected earlier.
+
+Examples: 
+|some user|
+|user|
+
+@SC_865449387
+Scenario Outline: Smoke. Extent the Tariff Plan
+Given am loged in as user <some user>
+And  I am on page 'Profile'
+And not defaul Tariff Plan is applied
+When I click button 'extend'
+Then I go to 'Relime Admine' tab 'Invotes'
+And I see that record on 'New invoices to handle' area is created for <some user>
+When I click button 'confirm' opposite  <some user>
+Then I go to Relime as user <some user>
+And I see that current Tariff Plan still selected.
+And section 'VALID TILL'  display 'current date + 1 year'
+
+Examples: 
+|some user|
+|user|
+
