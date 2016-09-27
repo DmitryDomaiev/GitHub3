@@ -33,6 +33,7 @@ Examples:
 |some data|
 ||
 
+
 @SC_1007536512
 Scenario Outline: Example Table in Scenario Editor
 Given I am on page 'Editor'
@@ -64,4 +65,5 @@ Then I see that edited text is saved
 Examples: 
 |some data|
 ||
+
 

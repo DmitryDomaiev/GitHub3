@@ -53,6 +53,7 @@ Examples:
 |selected quantity of users|selected price|
 |15|15|
 
+
 @SC_249927370
 Scenario: Select and congirm new Tariff plan
 Given I logged in Relime as user with default tariff plan
@@ -100,10 +101,11 @@ Examples:
 |500|500|
 |1000|1000|
 
+
 @SC_847352198
 Scenario Outline: Smoke. Select and confirm Tariff Plan
 Given am loged in as user <some user>
-And  I am on page 'Profile'
+And I am on page 'Profile'
 When I click not defoult Tariff Plan
 And I click button 'Update'
 Then I go to 'Relime Admine' tab 'Invotes'
@@ -115,10 +117,11 @@ Examples:
 |some user|
 |user|
 
+
 @SC_865449387
 Scenario Outline: Smoke. Extent the Tariff Plan
 Given am loged in as user <some user>
-And  I am on page 'Profile'
+And I am on page 'Profile'
 And not defaul Tariff Plan is applied
 When I click button 'extend'
 Then I go to 'Relime Admine' tab 'Invotes'
@@ -131,4 +134,5 @@ And section 'VALID TILL'  display 'current date + 1 year'
 Examples: 
 |some user|
 |user|
+
 
