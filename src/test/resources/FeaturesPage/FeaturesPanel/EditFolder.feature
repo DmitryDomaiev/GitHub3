@@ -1,4 +1,4 @@
-@EditFolder @ST_471983904
+@EditFolder @ST_186280718
 Feature: Edit folder
 
 Background: 
@@ -20,7 +20,7 @@ And I click on button "Create" on pop-up "New folder"
 Then I see that new folder is successfully created
 And I see that the new folder is selected in the tree
 
-@REL-473 @SC_527833541
+@REL-473 @SC_140021209
 Scenario: Name folder using valid symbols
 When I change textbox 'Folder name' value to "folderName_1_1" in folder info block under the tree
 And I click button 'Enter'
@@ -35,7 +35,7 @@ And I click button 'Save' for edited field under the tree
 Then I see success notification ""
 And I see that changes are successfully saved in textbox 'Folder name' in folder info block under the tree
 
-@REL-482 @SC_544036511
+@REL-482 @SC_148660907
 Scenario: Edit folder name using invalid symbols
 When I change textbox 'Folder name' value to "@" in folder info block under the tree
 And I click button 'Enter'
@@ -54,7 +54,7 @@ When I click icon 'Delete' in panel 'Features'
 And I click on button "Delete" on pop-up "Delete folder"
 Then I see that the folder was successfully deleted
 
-@REL-477 @SC_524183865
+@REL-477 @SC_111346796
 Scenario: Edit folder name using dot in the beginning
 When I change textbox 'Folder name' value to ".folderName_1_1" in folder info block under the tree
 And I click button 'Enter'
@@ -73,7 +73,7 @@ When I click icon 'Delete' in panel 'Features'
 And I click on button "Delete" on pop-up "Delete folder"
 Then I see that the folder was successfully deleted
 
-@REL-816 @SC_467520403
+@REL-816 @SC_158592842
 Scenario: Cancel editing folder name
 When I change textbox 'Folder name' value to "folderName_1_1" in folder info block under the tree
 And I click button 'Esc'
@@ -85,7 +85,7 @@ When I click icon 'Delete' in panel 'Features'
 And I click on button "Delete" on pop-up "Delete folder"
 Then I see that the folder was successfully deleted
 
-@REL-817 @SC_463462477
+@REL-817 @SC_185109856
 Scenario: Duplicate folder name
 And I select folder "feature" in the tree
 And I click button 'New folder' in panel 'Features'

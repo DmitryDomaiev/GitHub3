@@ -1,4 +1,4 @@
-@ScenarioValidationRules @ST_466328274
+@ScenarioValidationRules @ST_128296942
 Feature: Scenario validation rules
 
 Background: 
@@ -18,7 +18,7 @@ When I click option "Delete" under drop-down 'Actions' in scenario accordion
 And I click on button "Delete" on pop-up "Delete scenario"
 Then I see that background was successfully deleted
 
-@REL-855 @SC_524447084
+@REL-855 @SC_145463162
 Scenario: BDD rules validation
     #without given in feature having no background
     #without keywords in the beginning each strings

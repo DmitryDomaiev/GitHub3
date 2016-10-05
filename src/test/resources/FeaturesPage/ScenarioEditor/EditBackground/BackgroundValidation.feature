@@ -1,4 +1,4 @@
-@BackgroundValidation @ST_488724007
+@BackgroundValidation @ST_141244239
 Feature: Background validation
 
 Background: 
@@ -14,7 +14,7 @@ And I click on button "Update" on pop-up "UPDATE DATA FROM GIT"
 Then I see success notification ""
 When I select feature "ElevenScenarios" in the tree
 
-@REL-844 @SC_551166595
+@REL-844 @SC_160207752
 Scenario: Save by Save option
 And I select background in the table
 And I see scenario is expanded
@@ -30,7 +30,7 @@ And I click option "Save" under drop-down 'Actions' in scenario accordion
 And I see a notification message "Background must start with 'Given'" under "1" required fields on Editor page
 And I see that background is modified
 
-@REL-845 @SC_544434775
+@REL-845 @SC_185235087
 Scenario: Save by Save scenarios pop-up
 And I select background in the table
 And I see scenario is expanded
