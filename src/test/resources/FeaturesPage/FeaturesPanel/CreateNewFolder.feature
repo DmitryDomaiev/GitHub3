@@ -16,6 +16,20 @@ And I select folder "feature" in the tree
 And I click button 'New folder' in panel 'Features'
 And I see pop up "New folder" is opened
 
+@SC_179744684 @REL-444
+Scenario: Name duplicate folder
+When I type "folderName_1" into textbox 'Name' in pop-up 'New folder'
+And I click on button "Create" on pop-up "New folder"
+Then I see that new folder is successfully created
+And I see that the new folder is selected in the tree
+And I select folder "feature" in the tree
+And I click button 'New folder' in panel 'Features'
+And I see pop up "New folder" is opened
+When I type "folderName_1" into textbox 'Name' in pop-up 'New folder'
+And I click on button "Create" on pop-up "New folder"
+And I see pop up "New folder" was not closed
+And I click on button "Cancel" on pop-up "New folder"
+
 @REL-480 @SC_113314081
 Scenario: Name folder using invalid symbols
 When I type "!@#" into textbox 'Name' in pop-up 'New folder'
@@ -41,18 +55,4 @@ And I see that the new folder is selected in the tree
 When I click icon 'Delete' in panel 'Features'
 And I click on button "Delete" on pop-up "Delete folder"
 Then I see that the folder was successfully deleted
-
-@REL-444 @SC_179744684
-Scenario: Name duplicate folder
-When I type "folderName_1" into textbox 'Name' in pop-up 'New folder'
-And I click on button "Create" on pop-up "New folder"
-Then I see that new folder is successfully created
-And I see that the new folder is selected in the tree
-And I select folder "feature" in the tree
-And I click button 'New folder' in panel 'Features'
-And I see pop up "New folder" is opened
-When I type "folderName_1" into textbox 'Name' in pop-up 'New folder'
-And I click on button "Create" on pop-up "New folder"
-And I see pop up "New folder" was not closed
-And I click on button "Cancel" on pop-up "New folder"
 
