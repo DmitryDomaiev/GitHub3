@@ -17,7 +17,7 @@ And I click button 'New folder' in panel 'Features'
 And I see pop up "New folder" is opened
 
 @SC_179744684 @REL-444
-Scenario: Name duplicate folder
+Scenario: Name duplicate folder.
 When I type "folderName_1" into textbox 'Name' in pop-up 'New folder'
 And I click on button "Create" on pop-up "New folder"
 Then I see that new folder is successfully created
