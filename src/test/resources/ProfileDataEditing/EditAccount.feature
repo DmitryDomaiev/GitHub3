@@ -1,7 +1,7 @@
-@EditAccount @ST_120020476
+@ST_8590 @EditAccount
 Feature: Edit account
 
-@REL-694 @SC_150614297
+@SC_36293 @REL-694
 Scenario: Check updating existing account
 Given I am in page "Default"
 And I am signed in
@@ -18,4 +18,3 @@ And I change textbox 'Password' value to "123" in table 'Credentials'
 And I click button 'Save' for edited account
 And I see my account in table 'Credentials'
 And I click button 'Delete' for created account in panel 'Credentials' in page 'User Profile'
-

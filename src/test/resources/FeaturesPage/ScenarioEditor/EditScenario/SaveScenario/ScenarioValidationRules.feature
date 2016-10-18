@@ -1,4 +1,4 @@
-@ScenarioValidationRules @ST_128296942
+@ST_8582 @ScenarioValidationRules
 Feature: Scenario validation rules
 
 Background: 
@@ -18,7 +18,7 @@ When I click option "Delete" under drop-down 'Actions' in scenario accordion
 And I click on button "Delete" on pop-up "Delete scenario"
 Then I see that background was successfully deleted
 
-@REL-855 @SC_145463162
+@SC_36264 @REL-855
 Scenario: BDD rules validation
     #without given in feature having no background
     #without keywords in the beginning each strings
@@ -104,4 +104,3 @@ And I click on button "Cancel" on pop-up "SAVE SCENARIOS"
 And I see a notification message "Steps. Line 1: Can't contain a keyword only" under "1" required fields on Editor page
 And I see a notification message "Steps. Line 2: Can't contain a keyword only" under "1" required fields on Editor page
 And I see scenario "4" is modified
-

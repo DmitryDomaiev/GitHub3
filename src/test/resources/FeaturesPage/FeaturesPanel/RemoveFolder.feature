@@ -1,7 +1,7 @@
-@RemoveFolder @ST_153518866
+@ST_8572 @RemoveFolder
 Feature: Remove folder
 
-@REL-446 @SC_184484226
+@SC_36230 @REL-446
 Scenario: Remove folder
 Given I am in page "Default"
 And I am signed in
@@ -21,4 +21,3 @@ And I select folder "folderName_1" in the tree
 When I click icon 'Delete' in panel 'Features'
 And I click on button "Delete" on pop-up "Delete folder"
 Then I see that the folder was successfully deleted
-

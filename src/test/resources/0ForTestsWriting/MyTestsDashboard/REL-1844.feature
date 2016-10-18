@@ -1,7 +1,7 @@
-@ST_142581674
+@ST_8564
 Feature: REL-1844
 
-@SC_106492680
+@SC_36186
 Scenario: Verify thet Tariff plan section is appear
 test
 Given I logged in as a new user without domains and subscriptions
@@ -9,4 +9,3 @@ When I navigate to profile page
 Then I see that the section "Tariff plan" is not displayed
 When I create first domain
 Then I see that "Tariff plan" section is appear
-

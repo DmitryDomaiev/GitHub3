@@ -1,7 +1,7 @@
-@ST_112169961
+@ST_8563
 Feature: SmokeTestsEx.Table
 
-@SC_141631994
+@SC_36184
 Scenario Outline: Example Table in pop-up 'New scenario'
 Given I am on page 'Editor'
 And 'feature file' is selected
@@ -34,7 +34,7 @@ Examples:
 ||
 
 
-@SC_182728531
+@SC_36185
 Scenario Outline: Example Table in Scenario Editor
 Given I am on page 'Editor'
 And 'feature file' is selected
@@ -65,5 +65,3 @@ Then I see that edited text is saved
 Examples: 
 |some data|
 ||
-
-

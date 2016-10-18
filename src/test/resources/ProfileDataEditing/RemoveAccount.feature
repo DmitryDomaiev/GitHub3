@@ -1,7 +1,7 @@
-@RemoveAccount @ST_135197766
+@ST_8591 @RemoveAccount
 Feature: Remove account
 
-@REL-764 @SC_197765360
+@SC_36294 @REL-764
 Scenario: Check ability to remove account on 'Profile' page
 Given I am in page "Default"
 And I am signed in
@@ -13,4 +13,3 @@ And I click button 'Add' for new credential
 And I see my account in table 'Credentials'
 And I click button 'Delete' for created account in panel 'Credentials' in page 'User Profile'
 And I see account is not in the table 'Credentials'
-
