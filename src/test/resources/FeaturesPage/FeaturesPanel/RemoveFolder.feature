@@ -1,7 +1,7 @@
-@ST_10518 @RemoveFolder
+@ST_10769 @RemoveFolder
 Feature: Remove folder
 
-@SC_44291 @REL-446
+@SC_45242 @REL-446
 Scenario: Remove folder
 Given I am in page "Default"
 And I am signed in

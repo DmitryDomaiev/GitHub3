@@ -1,4 +1,4 @@
-@ST_10515 @EditFolder
+@ST_10766 @EditFolder
 Feature: Edit folder
 
 Background: 
@@ -20,7 +20,7 @@ And I click on button "Create" on pop-up "New folder"
 Then I see that new folder is successfully created
 And I see that the new folder is selected in the tree
 
-@SC_44276 @REL-473
+@SC_45227 @REL-473
 Scenario: Name folder using valid symbols
 When I change textbox 'Folder name' value to "folderName_1_1" in folder info block under the tree
 And I click button 'Enter'
@@ -35,7 +35,7 @@ And I click button 'Save' for edited field under the tree
 Then I see success notification ""
 And I see that changes are successfully saved in textbox 'Folder name' in folder info block under the tree
 
-@SC_44277 @REL-482
+@SC_45228 @REL-482
 Scenario: Edit folder name using invalid symbols
 When I change textbox 'Folder name' value to "@" in folder info block under the tree
 And I click button 'Enter'
@@ -54,7 +54,7 @@ When I click icon 'Delete' in panel 'Features'
 And I click on button "Delete" on pop-up "Delete folder"
 Then I see that the folder was successfully deleted
 
-@SC_44278 @REL-477
+@SC_45229 @REL-477
 Scenario: Edit folder name using dot in the beginning
 When I change textbox 'Folder name' value to ".folderName_1_1" in folder info block under the tree
 And I click button 'Enter'
@@ -73,7 +73,7 @@ When I click icon 'Delete' in panel 'Features'
 And I click on button "Delete" on pop-up "Delete folder"
 Then I see that the folder was successfully deleted
 
-@SC_44279 @REL-816
+@SC_45230 @REL-816
 Scenario: Cancel editing folder name
 When I change textbox 'Folder name' value to "folderName_1_1" in folder info block under the tree
 And I click button 'Esc'
@@ -85,7 +85,7 @@ When I click icon 'Delete' in panel 'Features'
 And I click on button "Delete" on pop-up "Delete folder"
 Then I see that the folder was successfully deleted
 
-@SC_44280 @REL-817
+@SC_45231 @REL-817
 Scenario: Duplicate folder name
 And I select folder "feature" in the tree
 And I click button 'New folder' in panel 'Features'
