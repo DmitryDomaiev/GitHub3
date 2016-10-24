@@ -1,7 +1,7 @@
-@ST_10497 @AddNewAccount
+@ST_10535 @AddNewAccount
 Feature: Add new account
 
-@SC_44189 @REL-701
+@SC_44352 @REL-701
 Scenario: Check account was not added
 Given I am in page "Default"
 And I am signed in
@@ -12,7 +12,7 @@ When I populated all required fields for new credential
 And I click button 'Cancel' for new credential
 And I see account is not in the table 'Credentials'
 
-@SC_44190 @REL-699:
+@SC_44353 @REL-699:
 Scenario: Check new account was added
 Given I am in page "Default"
 And I am signed in

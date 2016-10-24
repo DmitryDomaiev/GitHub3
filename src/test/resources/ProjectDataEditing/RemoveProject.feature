@@ -1,7 +1,7 @@
-@ST_10501 @RemoveProject
+@ST_10539 @RemoveProject
 Feature: Remove project
 
-@SC_44199 @REL-610
+@SC_44362 @REL-610
 Scenario: Check ability to delete project from Dashboard page
 Given I am in page "Default"
 And I am signed in
