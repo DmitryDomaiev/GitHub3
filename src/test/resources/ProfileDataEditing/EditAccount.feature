@@ -1,7 +1,7 @@
-@ST_10787 @EditAccount
+@ST_10825 @EditAccount
 Feature: Edit account
 
-@SC_45305 @REL-694
+@SC_45468 @REL-694
 Scenario: Check updating existing account
 Given I am in page "Default"
 And I am signed in

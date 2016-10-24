@@ -1,7 +1,7 @@
-@ST_10792 @TTSSettings
+@ST_10830 @TTSSettings
 Feature: TTS settings
 
-@SC_45317 @REL-825
+@SC_45480 @REL-825
 Scenario: Check task tracker notifications
 Given I am in page "Default"
 And I am signed in
@@ -26,7 +26,7 @@ Then I see pop up "ADD JIRA PATH" was closed
 Then I see success notification ""
 Then I see that "https://jira.unitedsofthouse.com/" is added to setting 'Task tracking system' in page 'Project settings'
 
-@SC_45318 @REL-830
+@SC_45481 @REL-830
 Scenario: Make changes in task tracker
 Given I am in page "Default"
 And I am signed in
@@ -51,7 +51,7 @@ Then I see pop up "ADD JIRA PATH" was closed
 And I see success notification ""
 And I see that "https://jira.unitedsofthouse.com/" is added to setting 'Task tracking system' in page 'Project settings'
 
-@SC_45319 @ignore @REL-620
+@SC_45482 @ignore @REL-620
 Scenario: Check that when all TTS are added button 'Add TTS' is disabled
 Given I am in page "Default"
 And I am signed in
@@ -93,7 +93,7 @@ And I see success notification ""
 And I see that "QC" is added to setting 'Task tracking system' in page 'Project settings'
 And I see that button 'Add TTS' is disabled
 
-@SC_45320 @ignore @REL-623
+@SC_45483 @ignore @REL-623
 Scenario: Check that alredy connected TTS are not displayed in dropdown list
 Given I am in page "Default"
 And I am signed in
