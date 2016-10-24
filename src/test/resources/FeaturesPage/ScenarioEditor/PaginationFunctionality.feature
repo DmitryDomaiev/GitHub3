@@ -1,7 +1,7 @@
-@ST_8574 @PaginationFunctionality
+@ST_10482 @PaginationFunctionality
 Feature: Pagination Functionality
 
-@SC_36244 @REL-837
+@SC_44142 @REL-837
 Scenario: Pagination functionality
     #pagination bar should not be displayed when scenario list has less than or exactly 10 scenarios
     #pagination bar should be displayed when scenario list has more than 10 scenarios

@@ -1,7 +1,7 @@
-@ST_8571 @RemoveFeature
+@ST_10479 @RemoveFeature
 Feature: Remove feature
 
-@SC_36229 @REL-449
+@SC_44127 @REL-449
 Scenario: Remove feature
 Given I am in page "Default"
 And I am signed in

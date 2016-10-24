@@ -1,7 +1,7 @@
-@ST_8591 @RemoveAccount
+@ST_10499 @RemoveAccount
 Feature: Remove account
 
-@SC_36294 @REL-764
+@SC_44192 @REL-764
 Scenario: Check ability to remove account on 'Profile' page
 Given I am in page "Default"
 And I am signed in
