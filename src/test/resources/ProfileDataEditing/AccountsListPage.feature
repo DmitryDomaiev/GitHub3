@@ -1,7 +1,7 @@
-@ST_10861 @AccountsListPage
+@ST_10899 @AccountsListPage
 Feature: Accounts list page
 
-@SC_45623 @REL-696
+@SC_45786 @REL-696
 Scenario: Check submitting form without completing all mandatory fields
 Given I am in page "Default"
 And I am signed in
@@ -13,7 +13,7 @@ And I see a notification message "Field is required" under "3" required fields o
 And I click button 'Cancel' for new credential
 And I see account is not in the table 'Credentials'
 
-@SC_45624 @REL-702
+@SC_45787 @REL-702
 Scenario: Check that account can be added at TTS block
 Given I am in page "Default"
 And I am signed in
@@ -32,7 +32,7 @@ When I navigate to page 'Profile'
 Then I see my account in table 'Credentials'
 And I click button 'Delete' for created account in panel 'Credentials' in page 'User Profile'
 
-@SC_45625 @REL-703
+@SC_45788 @REL-703
 Scenario: Check that added account can be canceled at TTS block
 Given I am in page "Default"
 And I am signed in
@@ -47,7 +47,7 @@ Then I see pop up "Add account" was closed
 When I navigate to page 'Profile'
 And I see account is not in the table 'Credentials'
 
-@SC_45626 @REL-704
+@SC_45789 @REL-704
 Scenario: Check that account can be added at VCS block
 Given I am in page "Default"
 And I am signed in
@@ -66,7 +66,7 @@ When I navigate to page 'Profile'
 Then I see my account in table 'Credentials'
 And I click button 'Delete' for created account in panel 'Credentials' in page 'User Profile'
 
-@SC_45627 @REL-705
+@SC_45790 @REL-705
 Scenario: Check that added account can be canceled at VCS block
 Given I am in page "Default"
 And I am signed in
@@ -81,7 +81,7 @@ Then I see pop up "Add account" was closed
 When I navigate to page 'Profile'
 And I see account is not in the table 'Credentials'
 
-@SC_45628 @ignore @REL-798
+@SC_45791 @ignore @REL-798
 Scenario: Check pagination panel for accounts
 Given I am in page "Default"
 And I am signed in

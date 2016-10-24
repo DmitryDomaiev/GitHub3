@@ -1,7 +1,7 @@
-@ST_10848 @RemoveScenario
+@ST_10886 @RemoveScenario
 Feature: Remove scenario
 
-@SC_45583 @REL-838
+@SC_45746 @REL-838
 Scenario: Remove scenario pop-up
 Given I am in page "Default"
 And I am signed in
