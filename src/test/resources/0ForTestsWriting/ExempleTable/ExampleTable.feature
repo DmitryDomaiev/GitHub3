@@ -64,4 +64,4 @@ Then I see that edited text is saved
 
 Examples: 
 |some data|
-||
+|111|
