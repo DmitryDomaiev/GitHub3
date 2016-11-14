@@ -1,7 +1,7 @@
-@ST_15965
+@ST_10876
 Feature: Profile page: Account Tariff plan.
 
-@SC_67814
+@SC_45688
 Scenario: Verify thet Tariff plan section is appear
 Given I logged in as a new user without domains and subscriptions
 When I navigate to profile page
@@ -9,7 +9,7 @@ Then I see that the section "Tariff plan" is not displayed
 When I create first domain
 Then I see that "Tariff plan" section is appear
 
-@SC_67815
+@SC_45689
 Scenario: Tariff plan section
 Given I am logged in Relime as user with default tariff plan
 And I navigate to profile page
@@ -24,7 +24,7 @@ And I see that text "Current plan: 5 subscriptions for free" is displayed under 
 And I see tha triangle pointer is displayed above 5
 And I see that te button "Update" is not displayed under the bar
 
-@SC_67816
+@SC_45690
 Scenario Outline: Select and cancel Tariff plan
 Given I am logged in Relime as user with default tariff plan
 And I navigate to profile page
@@ -54,7 +54,7 @@ Examples:
 |15|15|
 
 
-@SC_67817
+@SC_45691
 Scenario: Select and congirm new Tariff plan
 Given I logged in Relime as user with default tariff plan
 And I navigate to profile page
@@ -75,7 +75,7 @@ When I click button 'Cancel'
 Then I see that account tariff plan backs to the current plan
 Then I see that 'valid till' 'date' and button 'Extend' is displayed below 'Current plan'
 
-@SC_67818
+@SC_45692
 Scenario: Subscribe / unsubscribe users
 Given I am loggen in to Relime as user with maximum quantity of users
 When I navigate to page 'progect setting'
@@ -84,7 +84,7 @@ Then I see that th message 'Your tariff plan doesn't allow to invite more users.
 When I am invite more user(s) from tab 'Project team'
 Then I see that th message 'Your tariff plan doesn't allow to invite more users. You could extend it on Profile page' is displayed
 
-@SC_67819
+@SC_45693
 Scenario Outline: Verify price for Tariff Plan
 Given I am on page 'profile'
 And I see that 'Tariff Plan' is displayed.
@@ -102,7 +102,7 @@ Examples:
 |1000|1000|
 
 
-@SC_67820
+@SC_45694
 Scenario Outline: Smoke. Select and confirm Tariff Plan
 Given am loged in as user <some user>
 And I am on page 'Profile'
@@ -118,7 +118,7 @@ Examples:
 |user|
 
 
-@SC_67821
+@SC_45695
 Scenario Outline: Smoke. Extent the Tariff Plan
 Given am loged in as user <some user>
 And I am on page 'Profile'
