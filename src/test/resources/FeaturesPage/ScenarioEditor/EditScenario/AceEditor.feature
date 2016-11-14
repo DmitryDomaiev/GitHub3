@@ -1,7 +1,7 @@
-@ST_10890 @AceEditor
+@ST_14671 @AceEditor
 Feature: Ace Editor
 
-@SC_45754 @REL-834
+@SC_61426 @REL-834
 Scenario: Autocomplete rules + highlight
   #autocomplete list should be displayed when required
   #select a word / a stepline from autocomplete list / keyword should present in each step, line break should be added befor each When

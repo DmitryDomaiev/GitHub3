@@ -1,4 +1,4 @@
-@ST_10881 @ProjectTreeManipulations
+@ST_14662 @ProjectTreeManipulations
 Feature: Project tree manipulation
 
 Background: 
@@ -13,7 +13,7 @@ And I click on 'Select All' checkbox on pop-up "UPDATE DATA FROM GIT"
 And I click on button "Update" on pop-up "UPDATE DATA FROM GIT"
 Then I see success notification ""
 
-@SC_45722 @REL-466
+@SC_61394 @REL-466
 Scenario: Moving an object in the tree
       #folder
       #cancel action
@@ -46,7 +46,7 @@ And I click on button "Move" on pop-up "MOVE FEATURE FILE"
 And I see pop up "MOVE FEATURE FILE" was closed
 And I can see that element "search_book" is in position "6" in the tree
 
-@SC_45723 @REL-467
+@SC_61395 @REL-467
 Scenario: Rename and Move object pop-up + duplicate name
   #folder
   #feature
@@ -79,7 +79,7 @@ And I click on button "Cancel" on pop-up "RENAME AND MOVE FEATURE FILE"
 And I see pop up "RENAME AND MOVE FEATURE FILE" was closed
 And I can see that element "search_book" is in position "3" in the tree
 
-@SC_45724 @REL-478
+@SC_61396 @REL-478
 Scenario: Rename and Move folder pop-up + dot in the beginning
 And I drag element "2" under element "11" in the tree
 And I see pop up "RENAME AND MOVE FOLDER" is opened
@@ -89,7 +89,7 @@ And I click on button "Cancel" on pop-up "RENAME AND MOVE FOLDER"
 And I see pop up "RENAME AND MOVE FOLDER" was closed
 And I can see that element "book" is in position "2" in the tree
 
-@SC_45725 @REL-483
+@SC_61397 @REL-483
 Scenario Outline: Rename and Move feature file pop-up + invalid symbols
 And I drag element "3" under element "11" in the tree
 And I see pop up "RENAME AND MOVE FEATURE FILE" is opened
@@ -130,7 +130,7 @@ Examples:
 |;|
 
 
-@SC_45726 @REL-484
+@SC_61398 @REL-484
 Scenario Outline: Rename and Move folder pop-up + invalid symbols
 And I drag element "2" under element "11" in the tree
 And I see pop up "RENAME AND MOVE FOLDER" is opened
@@ -171,7 +171,7 @@ Examples:
 |;|
 
 
-@SC_45727 @REL-475
+@SC_61399 @REL-475
 Scenario Outline: Rename and Move folder pop-up + valid symbols
 And I drag element "2" under element "11" in the tree
 And I see pop up "RENAME AND MOVE FOLDER" is opened
@@ -189,7 +189,7 @@ Examples:
 |Aa-0|
 
 
-@SC_45728 @REL-474
+@SC_61400 @REL-474
 Scenario Outline: Rename and Move feature file pop-up + valid symbols
 And I drag element "3" under element "11" in the tree
 And I see pop up "RENAME AND MOVE FEATURE FILE" is opened
@@ -207,7 +207,7 @@ Examples:
 |Aa-0|
 
 
-@SC_45729 @REL-468
+@SC_61401 @REL-468
 Scenario: Select an object in the tree
     #feature
     #folder
