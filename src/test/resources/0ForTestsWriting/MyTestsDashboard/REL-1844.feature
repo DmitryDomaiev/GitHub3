@@ -1,7 +1,7 @@
-@ST_14656
+@ST_10875
 Feature: REL-1844
 
-@SC_61359
+@SC_45687
 Scenario: Verify thet Tariff plan section is appear
 test
 Given I logged in as a new user without domains and subscriptions
