@@ -1,7 +1,7 @@
-@ST_15963
+@ST_10874
 Feature: SmokeTestsEx.Table
 
-@SC_67811
+@SC_45685
 Scenario Outline: Example Table in pop-up 'New scenario'
 Given I am on page 'Editor'
 And 'feature file' is selected
@@ -34,7 +34,7 @@ Examples:
 ||
 
 
-@SC_67812
+@SC_45686
 Scenario Outline: Example Table in Scenario Editor
 Given I am on page 'Editor'
 And 'feature file' is selected
