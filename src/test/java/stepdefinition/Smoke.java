@@ -34,6 +34,24 @@ public class Smoke extends PageInstance {
     @Autowired
     ProfilePage profilePage;
 
+   @And("^DimaTestAutocomplete!!!!!!!!!!!!!!!!!!!!!$")
+    public void iTypeAsBackgroundNameInTextboxNameInPopUpNewScenario(String arg0) throws Throwable {
+        if (!checkIfFurtherStepsAreNeeded()) {
+            return;
+        }
+        try {
+            editorPage.newScenarioNameInput.enterText(arg0);
+            CommonHelper.testBackgroundName = arg0;
+            ReportService.ReportAction("'" + arg0 + "' is set to the field 'Name' for background in pop-up 'New Scenario'.", true);
+        } catch (AssertionError e) {
+            throw e;
+        } catch (Throwable e) {
+            ReportService.ReportAction("Error: " + e.getMessage(), false);
+        } finally {
+            CucumberArpReport.nextStep();
+        }
+    }	
+	
     @And("^I type \"([^\"]*)\" as background name in textbox 'Name' in pop-up 'New Scenario'$")
     public void iTypeAsBackgroundNameInTextboxNameInPopUpNewScenario(String arg0) throws Throwable {
         if (!checkIfFurtherStepsAreNeeded()) {
