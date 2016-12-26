@@ -34,7 +34,7 @@ public class Smoke extends PageInstance {
     @Autowired
     ProfilePage profilePage;
 
-   @And("^DimaTestAutocomplete!!!!!!!!!!!!!!!!!!!!!$")
+   @And("^$!!!!!!!!!!!!StepDefinitionsTestAutocomplete!!!!!!!!!$")
     public void iTypeAsBackgroundNameInTextboxNameInPopUpNewScenario(String arg0) throws Throwable {
         if (!checkIfFurtherStepsAreNeeded()) {
             return;
