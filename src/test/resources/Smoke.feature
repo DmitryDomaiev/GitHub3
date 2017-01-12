@@ -174,7 +174,7 @@ And I see that the new feature is selected in the tree
 
 @SC_80323 @REL-867
 Scenario: Create scenario
-    #And I select feature "fileName_1" in the tree
+#And I select feature "fileName_1" in the tree
 And I check that project "sDefault" is absent in DB
 And I click button 'Plus' in panel 'Projects' in page "Dashboard"
 Then I see pop up "New Project" is opened
@@ -311,7 +311,7 @@ And I see that changes are successfully saved in textbox 'Folder name' in folder
 
 @SC_80327 @REL-872
 Scenario: Edit feature
-    #And I see that new tag is added in tags input textbox in feature info block under the tree
+#And I see that new tag is added in tags input textbox in feature info block under the tree
 And I check that project "sDefault" is absent in DB
 And I click button 'Plus' in panel 'Projects' in page "Dashboard"
 Then I see pop up "New Project" is opened
@@ -362,7 +362,7 @@ And I see that tag "tag2" is added to feature info under the tree
 
 @SC_80328 @REL-873 @tag
 Scenario: Edit scenario + Save by Save option
-    #And I select feature "fileName_1" in the tree
+#And I select feature "fileName_1" in the tree
 And I check that project "sDefault" is absent in DB
 And I click button 'Plus' in panel 'Projects' in page "Dashboard"
 Then I see pop up "New Project" is opened
@@ -412,7 +412,7 @@ And I see that changes are successfully saved and changed data matches data in S
 
 @SC_80329 @tag @REL-874
 Scenario: Edit scenario + Save by Save Scenarios pop-up
-    #And I select feature "fileName_1" in the tree
+#And I select feature "fileName_1" in the tree
 And I check that project "sDefault" is absent in DB
 And I click button 'Plus' in panel 'Projects' in page "Dashboard"
 Then I see pop up "New Project" is opened
@@ -564,7 +564,7 @@ And I can delete "https://jira.unitedsofthouse.com/" from setting 'Task tracking
 
 @SC_80333 @REL-880
 Scenario: Remove scenario
-    #And I select feature "fileName_1" in the tree
+#And I select feature "fileName_1" in the tree
 And I check that project "sDefault" is absent in DB
 And I click button 'Plus' in panel 'Projects' in page "Dashboard"
 Then I see pop up "New Project" is opened
