@@ -34,7 +34,7 @@ public class Smoke extends PageInstance {
     @Autowired
     ProfilePage profilePage;
 	
-	@And("^Test2772DimaStepDef222222@")
+	@And("^Test 2772 Dima Step Def 222222 @")
     public void iSeeThatTheNewBackgroundIsExpanded() throws Throwable {
         if (!checkIfFurtherStepsAreNeeded()) {
             return;
