@@ -34,6 +34,23 @@ public class Smoke extends PageInstance {
     @Autowired
     ProfilePage profilePage;
 	
+	@And("^Test2772DimaStepDef222222@")
+    public void iSeeThatTheNewBackgroundIsExpanded() throws Throwable {
+        if (!checkIfFurtherStepsAreNeeded()) {
+            return;
+        }
+        try {
+            ReportService.ReportAction("The scenario is expanded.", editorPage.verifyIfScenarioAccordionIsExpanded());
+        } catch (AssertionError e) {
+            throw e;
+        } catch (Throwable e) {
+            ReportService.ReportAction("test: " + e.getMessage(), false);
+        } finally {
+            CucumberArpReport.nextStep();
+        }
+    }
+
+	
 	@And("^Test2772DimaStepDef111111111$")
     public void iSeeThatTheNewBackgroundIsExpanded() throws Throwable {
         if (!checkIfFurtherStepsAreNeeded()) {
