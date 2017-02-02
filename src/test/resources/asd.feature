@@ -6,6 +6,7 @@ asd
 Scenario: Scenario 1 with DT
 Given asd
 And asdf
+|asfasf|
 
 @SC_109009
 Scenario: 1
