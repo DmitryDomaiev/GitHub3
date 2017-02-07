@@ -7,6 +7,7 @@ Scenario Outline: Scenario 2 with ET
 Given some given
 When do something
 Then I do... <123>
+And I see that autocomplete line "[string]" is marked as "[string]" in pop-up 'New Scenario'
 
 Examples: 
 |123|
