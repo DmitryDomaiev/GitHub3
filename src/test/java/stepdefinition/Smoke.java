@@ -53,7 +53,7 @@ public class Smoke extends PageInstance {
 
 
 	
-	@And("^some$")
+	@And("^some@")
     public void Some() throws Throwable {
         if (!checkIfFurtherStepsAreNeeded()) {
             return;
