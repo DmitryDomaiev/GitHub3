@@ -50,8 +50,8 @@ public class Smoke extends PageInstance {
         }
     }
 	
-	@And("^Test 2772 Dima Step Def 222222 @")
-    public void iSeeThatTheNewBackgroundIsExpanded() throws Throwable {
+	@Given("^some given")
+    public void GivenSomeGiven() throws Throwable {
         if (!checkIfFurtherStepsAreNeeded()) {
             return;
         }
