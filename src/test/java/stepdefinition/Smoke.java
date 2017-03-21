@@ -34,24 +34,9 @@ public class Smoke extends PageInstance {
     @Autowired
     ProfilePage profilePage;
 	
-	@And("^Test 2772 Dima Step Def 222222 @")
-    public void iSeeThatTheNewBackgroundIsExpanded() throws Throwable {
-        if (!checkIfFurtherStepsAreNeeded()) {
-            return;
-        }
-        try {
-            ReportService.ReportAction("The scenario is expanded.", editorPage.verifyIfScenarioAccordionIsExpanded());
-        } catch (AssertionError e) {
-            throw e;
-        } catch (Throwable e) {
-            ReportService.ReportAction("test: " + e.getMessage(), false);
-        } finally {
-            CucumberArpReport.nextStep();
-        }
-    }
-	
+		
 	@Given("^some given$")
-    public void GivenSomeGiven() throws Throwable {
+    public void SomeGiven() throws Throwable {
         if (!checkIfFurtherStepsAreNeeded()) {
             return;
         }
@@ -68,8 +53,8 @@ public class Smoke extends PageInstance {
 
 
 	
-	@And("^Test2772DimaStepDef111111111$")
-    public void iSeeThatTheNewBackgroundIsExpanded() throws Throwable {
+	@And("^some$")
+    public void Some() throws Throwable {
         if (!checkIfFurtherStepsAreNeeded()) {
             return;
         }
