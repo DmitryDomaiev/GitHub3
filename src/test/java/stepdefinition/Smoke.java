@@ -68,6 +68,22 @@ public class Smoke extends PageInstance {
             CucumberArpReport.nextStep();
         }
     }
+	
+	@And("^test@")
+    public void SomeSome() throws Throwable {
+        if (!checkIfFurtherStepsAreNeeded()) {
+            return;
+        }
+        try {
+            ReportService.ReportAction("The scenario is expanded.", editorPage.verifyIfScenarioAccordionIsExpanded());
+        } catch (AssertionError e) {
+            throw e;
+        } catch (Throwable e) {
+            ReportService.ReportAction("Error: " + e.getMessage(), false);
+        } finally {
+            CucumberArpReport.nextStep();
+        }
+    }
 
    @And("^$!!!!!!!!!!!!!!!!!!!!!$")
     public void iTypeAsBackgroundNameInTextboxNameInPopUpNewScenario(String arg0) throws Throwable {
