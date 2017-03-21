@@ -50,7 +50,7 @@ public class Smoke extends PageInstance {
         }
     }
 	
-	@Given("^some given")
+	@Given("^some given$")
     public void GivenSomeGiven() throws Throwable {
         if (!checkIfFurtherStepsAreNeeded()) {
             return;
