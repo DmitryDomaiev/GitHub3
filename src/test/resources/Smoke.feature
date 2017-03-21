@@ -7,6 +7,11 @@ Given I am in page "Default"
 And I am signed in
 And I am in page "Dashboard"
 
+@SC_291301
+Scenario: test step def
+Given some given
+And some
+
 @SC_80316 @REL-863
 Scenario: Create project
 And I check that project "sDefault" is absent in DB
