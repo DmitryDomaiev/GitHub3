@@ -705,4 +705,5 @@ And I see that the project was successfully deleted
 @SC_291301
 Scenario: test step def
 Given some given
-And some
+And some some
+And test
